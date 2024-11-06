@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class VerificacaoMaioridade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Digite a primeira idade: ");
+        int idade1 = scanner.nextInt();
+        
+        System.out.print("Digite a segunda idade: ");
+        int idade2 = scanner.nextInt();
+        
+        if (idade1 >= 18 && idade2 >= 18) {
+            System.out.println("Ambas as pessoas são maiores de idade.");
+        } else {
+            System.out.println("Pelo menos uma das pessoas não é maior de idade.");
+        }
+    }
+}
