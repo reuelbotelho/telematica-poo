@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class DescontoAplicado {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Digite o preço original: ");
+        double precoOriginal = scanner.nextDouble();
+        System.out.print("Digite o percentual de desconto: ");
+        double descontoPercentual = scanner.nextDouble();
+        
+        double desconto = (precoOriginal * descontoPercentual) / 100;
+        double precoFinal = precoOriginal - desconto;
+        
+        System.out.println("Preço com desconto: " + precoFinal);
+    }
+}
