@@ -1,0 +1,11 @@
+public class OperadoresIncremento {
+    public static void main(String[] args) {
+        int contador = 5;
+       
+        contador++;
+        System.out.println("Após incremento: " + contador);
+        
+        contador--;
+        System.out.println("Após decremento: " + contador);
+    }
+}
